@@ -1,120 +1,111 @@
 ---
 name: lecture-presentation
-description: Kỹ năng thuyết trình áp dụng cho bài giảng đại học (dựa trên Chương 10 "Kỹ năng thuyết trình", giáo trình Kỹ năng giao tiếp kinh doanh). Dùng khi cần thiết kế, viết kịch bản hoặc rà soát một bài giảng/bài thuyết trình trước sinh viên - mở đầu gây ấn tượng, cấu trúc "Cái đinh", chuyển ý, hoạt động tương tác, kết luận đáng nhớ, lời giảng (speaker notes), phân bổ thời gian và nguyên tắc slide. Kích hoạt khi người dùng nói "soạn bài giảng", "slide bài giảng", "kịch bản giảng", "thuyết trình cho sinh viên", "mở đầu bài giảng", "hoạt động tương tác trên lớp", "lecture", "presentation script", hoặc khi kết hợp với một skill sư phạm (teaching) và một skill tạo slide (pptx/academic-pptx).
+description: Lớp "trình diễn" cho bài giảng đại học, dựa trên Chương 10 "Kỹ năng thuyết trình" (giáo trình Kỹ năng giao tiếp kinh doanh). Biến nội dung bài học đã có thành một bài giảng thu hút - mở đầu gây ấn tượng (12 cách), cấu trúc "Cái đinh", chuyển ý, kết luận đáng nhớ (9 cách), lời giảng kèm chỉ dẫn giọng nói và cử chỉ, nhịp tương tác, ngân hàng câu hỏi - và xuất "Bản thiết kế bài giảng" cho academic-pptx dựng slide. Dùng sau lesson-builder (teaching-skills) và trước academic-pptx; cũng chạy độc lập khi chưa có giáo án. Kích hoạt khi người dùng muốn bài giảng "ấn tượng", "thu hút", "có hook", "kịch bản giảng", "lời giảng cho slide", "speaker notes", "kỹ năng thuyết trình", "mở đầu/kết thúc bài giảng", "luyện giảng", hoặc yêu cầu kết hợp teaching-skills với academic-pptx để làm slide bài giảng.
 ---
 
 # Kỹ năng thuyết trình cho bài giảng
 
-Skill này biến nội dung bài học thành **một bài giảng được "trình diễn"**: có mũi đinh sắc (mở đầu), thân đinh chắc (thân bài), mũ đinh vững (kết luận), có kịch bản lời giảng, khoảng dừng, cử chỉ và hoạt động tương tác phù hợp. Nguồn: Chương 10 – _Kỹ năng thuyết trình_ (Khái quát, Chuẩn bị, Cấu trúc, Thuyết trình hiệu quả), đã chuyển từ bối cảnh kinh doanh sang bối cảnh **giảng viên – sinh viên**.
+Skill này là **lớp trình diễn** của bài giảng: lesson-builder quyết định _dạy gì và theo nhịp nào_, academic-pptx quyết định _slide trông thế nào_, còn skill này quyết định **giảng viên nói gì, nói thế nào, mở và kết ra sao để sinh viên chú ý và nhớ**. Cơ sở là Chương 10 – _Kỹ năng thuyết trình_: cấu trúc "Cái đinh" (mũi đinh sắc – thân đinh chắc – mũ đinh vững), 30 giây đầu, quy tắc Con số 3, nguyên tắc 3S, quy tắc thời gian, giọng nói và ngôn ngữ cơ thể. Nội dung đã được chuyển từ bối cảnh kinh doanh sang bối cảnh **giảng viên – sinh viên**.
 
-## Vai trò khi kết hợp với các skill khác
+## Vị trí trong chuỗi skill
 
-| Skill                                  | Phụ trách                                                        | Skill này bổ sung                                                                                                  |
-| -------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Skill sư phạm (teaching)               | Mục tiêu học tập, nội dung chuyên môn, phương pháp dạy, đánh giá | Biến mục tiêu thành **thông điệp cốt lõi**, chọn mở đầu/kết luận, kịch bản lời giảng, nhịp độ, tương tác           |
-| Skill tạo slide (academic-pptx / pptx) | Bố cục, màu sắc, hình ảnh, xuất file .pptx                       | Quy định **mỗi slide nói gì, hiển thị bao nhiêu chữ, khi nào chèn hoạt động**, và **speaker notes** cho từng slide |
+```
+teaching-skills / lesson-builder  →  lecture-presentation  →  academic-pptx (+ pptx)
+  arc S1…Sn, outcomes,                 hook, kết luận, chuyển ý,     dựng .pptx: action title,
+  lecture notes, slides outline,        lời giảng + chỉ dẫn trình     thiết kế, citation,
+  activity sheets                       bày, Q&A → BẢN THIẾT KẾ       QA, Notes
+```
 
-Thứ tự làm việc đề xuất: **teaching** (mục tiêu + nội dung) → **lecture-presentation** (Bản thiết kế bài giảng, xem mục "Đầu ra") → **academic-pptx** (dựng slide từ bản thiết kế, đưa lời giảng vào phần Notes). Nếu không có skill sư phạm, tự xác định mục tiêu theo Bước 1. Nếu có xung đột: nội dung chuyên môn theo skill sư phạm; hình thức hiển thị theo skill slide; **lượng chữ trên slide, nhịp độ và tương tác theo skill này**.
+- **Có artifact của lesson-builder** (`lessons/W<N>_lesson_plan.md`, `_lecture_notes.md`, `_slides_outline.md`, `_activity_*.md`): đọc chúng, **giữ nguyên** nội dung chuyên môn, timing và tiêu đề đã được giảng viên xác nhận; chỉ **bổ sung** lớp trình diễn. Mọi thay đổi so với artifact gốc phải được nêu ở checkpoint.
+- **Chưa có**: nếu người dùng có cài teaching-skills, đề nghị chạy `lesson-builder` (mode `full`) trước. Nếu người dùng muốn làm luôn, chạy độc lập theo 6 bước dưới đây.
+- **Dựng slide**: giao Bản thiết kế cho **academic-pptx** (đọc kèm skill pptx). `deck-studio` của teaching-skills là đường thay thế khi cần Marp/PDF/Beamer hoặc theme chung cho cả khóa học. Chỉ dùng **một** công cụ dựng slide cho mỗi bộ.
+
+Hợp đồng chi tiết giữa các skill (đầu vào, đầu ra, cách giải quyết xung đột quy tắc) nằm ở `references/integration.md`. **Đọc file đó trước** khi chạy cùng hai skill kia.
+
+## Quy tắc bắt buộc (tương thích teaching-skills)
+
+1. **Không bịa.** Hook bằng số liệu, câu chuyện, trích dẫn, video là chỗ dễ bịa nhất. Số liệu hoặc trích dẫn chưa chắc chắn phải gắn `[VERIFY: <nội dung> — <lý do chưa chắc>]`. Câu chuyện hay ví dụ cần trải nghiệm thật của giảng viên thì gắn `[NEEDS PROFESSOR INPUT: <cần gì>]`. Tình huống giả định phải ghi rõ là giả định.
+2. **Giảng viên quyết định.** Kết thúc bằng một checkpoint 4 khối (Produced / Key decisions / Flags / Open questions), theo `shared/checkpoint_protocol.md` của teaching-skills. Khi giảng viên nói "cứ làm đi", rút gọn checkpoint.
+3. **Bám mục tiêu.** Mỗi hook, câu chuyện, hoạt động phải phục vụ một outcome của buổi học. Hook "vui nhưng lạc đề" là lỗi (sách: "xôi hỏng bỏng không").
+4. **Ghi chỉ dẫn trình bày bằng chữ nghiêng trong ngoặc**, giống lecture_writer: _(dừng 3 giây)_, _(nhấn: "…")_, _(hỏi lớp: "…")_, _(hạ giọng)_, _(bước xuống giữa lớp)_. Không dùng ngoặc vuông cho chỉ dẫn. Ngoặc vuông chỉ dành cho các marker của teaching-skills (`[VERIFY]`, `[NEEDS PROFESSOR INPUT]`, `[BOARD]`, `[NEEDS CONTENT]`).
 
 ## Quy trình 6 bước
 
-### Bước 1 – Xác định tình huống và mục tiêu (trả lời 4 câu hỏi)
+### Bước 1 – Xác định tình huống và mục tiêu
 
-1. **Giảng cái gì?** – chủ đề, phạm vi giới hạn.
-2. **Giảng như thế nào?** – mục đích: cung cấp thông tin / thuyết phục (thay đổi quan điểm, hành vi) / truyền cảm hứng.
-3. **Sinh viên sẽ cảm nhận thế nào?**
-4. **Sinh viên sẽ thay đổi thế nào?** – sau buổi học biết gì, làm được gì.
+Nếu có `course_passport.yaml` hoặc lesson plan thì lấy từ đó: chủ đề, outcomes, `class_size`, `modality`, độ dài buổi học, `learner_profile.known_difficulties`. Không hỏi lại những gì đã có. Nếu không có thì hỏi gộp trong một lần: môn và chủ đề; đối tượng (năm học, ngành, kiến thức nền); sĩ số; thời lượng; hình thức và thiết bị; mục tiêu.
 
-Mục tiêu cụ thể phải: cụ thể, rõ ràng; đo/kiểm tra được; khả thi; hướng đến kết quả; có thời hạn. Viết **thông điệp cốt lõi** thành **1 câu ngắn (≤ 140 ký tự)** – kiểu "headline" của Steve Jobs – đây là câu sinh viên phải nhớ khi ra về.
+Trả lời 4 câu hỏi của sách: **Giảng cái gì? Giảng như thế nào** (cung cấp thông tin / thuyết phục / truyền cảm hứng)? **Sinh viên sẽ cảm nhận thế nào? Sinh viên sẽ thay đổi thế nào?**
 
-Nếu người dùng chưa cung cấp, hỏi (gộp trong một lần): môn học & chủ đề; đối tượng (năm học, ngành, kiến thức nền); sĩ số; thời lượng; hình thức (trực tiếp/trực tuyến, phòng học, thiết bị); mục tiêu học tập. Thiếu thông tin không quan trọng thì giả định hợp lý và ghi rõ giả định.
+Viết **thông điệp cốt lõi**: một câu ≤ 140 ký tự, kiểu headline của Steve Jobs. Đây là câu sinh viên phải nhớ khi ra về.
 
-### Bước 2 – Phân tích thính giả (sinh viên) và diễn giả (giảng viên)
+### Bước 2 – Phân tích thính giả và diễn giả
 
-- **Sinh viên:** tuổi, ngành, trình độ, kiến thức nền, mối quan tâm, động lực ("Họ được gì từ bài này?"). Người nghe không quan tâm đến diễn giả mà quan tâm đến chính họ → mọi thông điệp viết theo hướng **"vì người nghe"**.
-- **Sĩ số quyết định cấu trúc:** lớp nhỏ → hỏi đáp cụ thể, mời phát biểu, thảo luận; lớp đông → phần lớn một chiều, nên ưu tiên **rõ ràng, chính xác, dễ hiểu**, dùng tương tác toàn lớp (giơ tay, bình chọn).
-- **Văn hóa lớp/trường:** tránh vi phạm chuẩn mực; hài hước phải đúng lúc, đúng mức, liên quan đề tài.
-- **Giảng viên tự hỏi:** Tôi muốn gì? Quan hệ của tôi với lớp ra sao? Tôi ảnh hưởng tới họ bằng cách nào? Điểm mạnh phong cách của tôi là gì (kể chuyện, hài hước, số liệu…)?
+- **Sinh viên:** họ được gì từ bài này? Người nghe quan tâm đến chính họ chứ không quan tâm đến diễn giả, nên mọi thông điệp phải viết theo hướng "vì người nghe". Các khó khăn thường gặp (`known_difficulties`) là nguồn tốt nhất cho hook và cho phần trả lời trước quan niệm sai.
+- **Sĩ số:** lớp nhỏ thì hỏi đáp cụ thể, mời phát biểu. Lớp đông thì bài giảng phần lớn là một chiều, nên phải rõ ràng, chính xác và dùng tương tác toàn lớp (giơ tay, bình chọn).
+- **Văn hóa lớp:** hài hước phải đúng lúc, đúng mức. Với lớp quốc tế, tránh thành ngữ khó dịch.
+- **Giảng viên:** thế mạnh phong cách (kể chuyện, số liệu, hài hước…) quyết định nên chọn hook nào. Nếu chưa biết thì hỏi ở phần Open questions.
 
-### Bước 3 – Chọn lọc nội dung: "Bắt buộc → Cần → Nên"
+### Bước 3 – Chọn lọc: "Bắt buộc → Cần → Nên"
 
-- Phân loại mọi ý thành **Bắt buộc** (phải biết), **Cần** (cần biết), **Nên** (biết thì tốt). Sắp xếp theo thứ tự đó; hết giờ thì cắt từ dưới lên.
-- Thân bài chỉ **3 vấn đề chính** (tối đa 3–5) – quy tắc "Con số 3". Ít hơn → sơ sài; nhiều hơn → lan man.
-- Lý do: sau 20 phút người nghe quên ~40%, sau nửa ngày ~60%, sau một tuần ~90% (Yale) → chọn ít ý, nhắc lại ý chính.
-- Kiểm tra số liệu: mới nhất, chính xác, có nguồn. **Sai số liệu** là lỗi nghiêm trọng.
-- Không chỉ nói mặt tốt: nêu cả **giới hạn, rủi ro, phản biện** của lý thuyết/phương pháp để tăng tính thuyết phục.
+- Gắn nhãn Bắt buộc / Cần / Nên cho các ý của từng segment. Đây là nền cho phương án co giãn thời gian: hết giờ thì cắt từ "Nên" lên. **Không bao giờ cắt kết luận/closure.**
+- Thân bài có **3 ý chính** (tối đa 5), theo quy tắc Con số 3. Lý do: người nghe quên khoảng 40% sau 20 phút và khoảng 90% sau một tuần, nên cần ít ý và nhắc lại.
+- Số liệu phải mới, có nguồn và được quy đổi về điều quen thuộc (ví dụ: va chạm ở 70 km/h tương đương rơi từ tầng 6). Nêu cả giới hạn và phản biện; bỏ qua rủi ro là một trong "5 yếu tố cản trở".
 
-### Bước 4 – Dựng cấu trúc "Cái đinh"
+### Bước 4 – Dựng "Cái đinh" trên arc có sẵn
 
 ```
-MŨI ĐINH  (Mở đầu ~10%)   – sắc nhọn: thu hút ngay 30 giây đầu
-THÂN ĐINH (Thân bài ~75%) – chắc chắn, vừa độ dài, logic, 3 vấn đề chính
-MŨ ĐINH   (Kết luận ~15%) – gắn kết: tóm tắt, củng cố, kêu gọi hành động
+MŨI ĐINH  = activation + mở đầu   (30 giây đầu quyết định)
+THÂN ĐINH = các segment input/active, 3 ý chính, chuyển ý chặt chẽ
+MŨ ĐINH   = check + closure + kết luận (không bao giờ bị cắt)
 ```
 
-**Mở đầu** phải đạt 3 mục đích: (1) tạo không khí gần gũi, cầu nối giảng viên – sinh viên; (2) thu hút sự tập trung; (3) chuyển sinh viên từ trạng thái thiếu tập trung sang lắng nghe. Gồm theo thứ tự:
+**Mở đầu**: hook → (chào, giới thiệu ngắn ở buổi đầu hoặc khi có khách mời) → đề tài và ý nghĩa → **outcomes bằng lời của sinh viên** → dàn ý 3 ý → thỏa thuận cơ chế (khi nào hỏi, có thảo luận nhóm không). Chọn 1–2 hook trong `references/openings.md`. Nên ưu tiên hook **kiêm luôn activation** của lesson-builder (câu hỏi bất ngờ, dự đoán, giơ tay, câu đố về bài trước), để không tốn thêm phút. Không mở bằng câu khô khan kiểu "Hôm nay tôi rất vui…", cũng không mở bằng thông báo hành chính.
 
-1. **Móc câu (hook)** – chọn 1–2 trong 12 cách mở đầu, xem `references/openings.md`. Cấm mở bằng câu khô khan kiểu "Hôm nay tôi rất vui được…".
-2. **Chào và giới thiệu ngắn** (bản thân/khách mời – không tự quảng cáo dài dòng).
-3. **Giới thiệu đề tài**: tên, ý nghĩa, tầm quan trọng với sinh viên, mục tiêu buổi học.
-4. **Dàn ý** (3 ý chính) để sinh viên hình dung lộ trình.
-5. **Thỏa thuận cơ chế**: thời gian, khi nào hỏi đáp, có thảo luận nhóm/bài thu hoạch không.
+**Thân bài**: mỗi ý chính đi theo trình tự _nêu vấn đề → nội dung → nhấn trọng tâm → ví dụ → kết luận nhỏ → chuyển ý_. Chọn một bố cục logic: thời gian; nguyên nhân – kết quả; vấn đề – giải pháp; đối lập; lập luận – dẫn chứng. Mỗi lần chuyển ý cần một câu chuyển (mẫu trong `references/integration.md` §4) và một khoảng dừng. Rà lập luận theo `references/logic-and-reasoning.md`.
 
-**Thân bài**: mỗi vấn đề theo trình tự _Nêu vấn đề → Trình bày nội dung → Nhấn mạnh trọng tâm → Ví dụ minh họa → Nhận xét, kết luận nhỏ → Chuyển ý_. Chọn một kiểu bố cục logic: thời gian; nguyên nhân – kết quả; vấn đề – giải pháp; đối lập (quan điểm A vs B); lập luận – dẫn chứng. Cụ thể hóa cái trừu tượng (không nói "người ấy lễ độ" mà mô tả hành vi cụ thể). Số liệu phải so sánh với điều quen thuộc (ví dụ: va chạm ở 70 km/h ≈ rơi từ tầng 6). Lập luận và lỗi lập luận cần tránh: `references/logic-and-reasoning.md`.
+**Kết luận**: câu chuyển → tóm tắt 3 ý (phần quan trọng nhất) → closure hoặc check (phiếu 1 phút…) → liên hệ với nghề nghiệp/đời sống → câu kết (sound bite, quay về hook) → kêu gọi hành động và nối sang buổi sau. Slide cuối cùng là **slide Kết luận**, giữ nguyên trên màn hình suốt phần hỏi đáp. **Không kết bằng slide "Cảm ơn"** (quy tắc của academic-pptx và cũng là tinh thần "dừng đúng lúc" của sách). Xem `references/closings.md`.
 
-**Chuyển ý** giữa các phần là bắt buộc; bài dài thì tóm tắt phần trước khi chuyển. Mẫu câu: "Trên đây chúng ta đã tìm hiểu… tiếp theo, …", "Trên cơ sở những điều đã nêu ở…, xin đề xuất…", "Nói tóm lại…", "Sau những gì đã phân tích, có thể kết luận…".
+### Bước 5 – Nhịp độ và tương tác
 
-**Kết luận** gồm 4 yếu tố: (1) câu chuyển sang phần kết; (2) tóm tắt nội dung chủ yếu – phần **quan trọng nhất, không được thiếu**; (3) củng cố mối liên hệ giữa nội dung với đời sống/nghề nghiệp của sinh viên; (4) câu kết ấn tượng + lời kêu gọi hành động. Chọn 1–2 trong 9 cách kết, xem `references/closings.md`. Hỏi – đáp: dự trù **5–10 phút cho mỗi 1–2 giờ**; có thể tóm tắt trước hoặc sau Q&A. Dừng đúng lúc: "cảm ơn và ngồi xuống", không giảng giải dài dòng sau câu kết.
+- **Tỉ lệ của sách (50% giảng – 25% người nghe tham gia – 25% dự phòng)** áp dụng nguyên văn cho **bài nói đơn lẻ** (seminar, báo cáo, bảo vệ). Với **buổi học** đã có arc của lesson-builder, áp dụng như sau: thời gian giảng viên nói **≤ 2/3**, sinh viên hoạt động **≥ 1/3**, slack 2–3 phút theo lesson-builder, còn phần "dự phòng" của sách trở thành **nội dung "Nên" có thể cắt** cộng với **phần mở rộng đã chuẩn bị sẵn**.
+- Không giảng liền quá 20–25 phút mà không có hoạt động. Giữa các hoạt động, cứ khoảng 10 phút chèn một **"điểm chạm" ≤ 1 phút**: giơ tay, câu hỏi nhanh, dự đoán (xem `references/interactive-activities.md`).
+- Thiết kế hoạt động dài (TPS, jigsaw, case…) là việc của `activity_designer` trong lesson-builder. Skill này chỉ lo phần **lời dẫn vào hoạt động, câu chuyển ra và cách phản hồi**.
+- Chuẩn bị **ngân hàng câu hỏi**: 3–5 câu sinh viên dễ hỏi nhất, mỗi câu kèm câu trả lời và một slide phụ lục (theo quy ước Appendix của academic-pptx). Chủ động trả lời trước quan niệm sai: "Có thể các bạn đang nghĩ… Thực ra…".
 
-### Bước 5 – Phân bổ thời gian và thiết kế tương tác
+### Bước 6 – Lời giảng và chỉ dẫn trình bày
 
-- **Quy tắc 75%:** kịch bản chỉ chiếm 75% thời lượng được giao (dự phòng 25%). Trong đó **50% giảng – 25% sinh viên tham gia** (tương tác, thảo luận, hỏi đáp).
-- Phần mở đầu ngắn gọn để tạo cảm giác bài giảng súc tích.
-- Chuẩn bị **phương án co giãn**: nếu bị thiếu giờ thì cắt phần nào, tóm tắt phần nào; nếu dư giờ thì bổ sung phần nào.
-- Cứ **10–15 phút** giảng nên có một "điểm chạm" tương tác. Chọn hoạt động theo mục đích và sĩ số trong `references/interactive-activities.md`.
-- Chuẩn bị trước **danh sách câu hỏi sinh viên có thể hỏi** và câu trả lời; câu nào trả lời ngay, câu nào để sau/trao đổi riêng. Chủ động trả lời trước những quan niệm sai phổ biến ("Có thể các bạn đang nghĩ… Thực tế là…").
+- Viết **văn nói**: câu ngắn, từ phổ thông, giải thích thuật ngữ, không biệt ngữ. Phép thử: đọc to lên có giống người đang nói chuyện không?
+- **Lượng lời ≈ thời lượng.** Lời giảng của mỗi slide phải nói vừa trong số phút đã giao (ước lượng bằng cách đọc to và bấm giờ). Thừa lời thì cắt nội dung, không nói nhanh hơn.
+- Chèn chỉ dẫn _(…)_ ở đúng chỗ: dừng khoảng 3 giây khi chuyển ý và trước/sau ý quan trọng; hạ giọng khi sắp kết thúc một ý chính để nhấn mạnh; câu hỏi cho lớp; di chuyển; quét ánh mắt theo hình W/M. Giọng phải hợp với phòng, với người nghe và với ý (xem `references/delivery.md`).
+- Khi lecture_writer đã viết lecture notes, **giữ nguyên câu chữ chuyên môn**. Chỉ thêm hook, câu chuyển, chỉ dẫn trình bày và rút gọn thành lời nói theo từng slide.
 
-### Bước 6 – Viết lời giảng và chỉ dẫn trình bày
+## Đầu ra
 
-- Viết **văn nói**, không phải văn viết: câu ngắn, từ phổ thông, giải thích thuật ngữ; tránh biệt ngữ, từ địa phương.
-- Đánh dấu trong lời giảng: `[DỪNG 3s]` khi chuyển ý và trước/sau ý quan trọng; `[NHẤN]` từ khóa; `[NHỎ GIỌNG]` khi sắp kết thúc một ý chính để nhấn mạnh; `[HỎI LỚP]`; `[CỬ CHỈ: …]`; `[DI CHUYỂN]`; `[NHÌN BAO QUÁT]`.
-- Giọng phải hợp với **phòng** (phòng rộng → nói chậm), hợp với **người nghe** (lớp học thuật → tự nhiên, thân mật), hợp với **ý** (ý buồn → trầm; hô hào → lớn; kể chuyện → thành thật; lý luận → nghiêm trang, chậm).
-- Cảm xúc phù hợp nội dung: tin vui/hấp dẫn → nhiệt tình; nội dung nghiêm trọng → nghiêm trang.
-- Kèm chỉ dẫn phi ngôn ngữ cho giảng viên: `references/delivery.md` (giọng nói, ánh mắt W/M, quy tắc 3 giây, tư thế, cử chỉ, trang phục, kiểm soát hồi hộp, luyện tập).
+1. **Bản thiết kế bài giảng** – `lessons/W<N>_presentation_blueprint.md` (dùng tên khác nếu không theo tuần), viết theo `references/blueprint-template.md`. Mục C (kịch bản từng slide) là đầu vào trực tiếp cho academic-pptx: action title, phần hiển thị, exhibit, citation, speaker notes, segment ID.
+2. **Checkpoint** 4 khối. Key decisions ghi: hook đã chọn, cách kết, các slide thêm hoặc sửa so với outline, phương án cắt. Flags ghi: các marker còn mở, phần thừa giờ, xung đột quy tắc.
+3. Khi giảng viên xác nhận: chuyển sang academic-pptx. Nếu có passport, thêm đường dẫn blueprint vào `artifact_refs[]` của tuần đó (chỉ append, không ghi đè).
 
-## Nguyên tắc slide (truyền cho skill tạo slide)
+## Tự kiểm tra trước checkpoint
 
-1. **Slide là công cụ hỗ trợ, giảng viên mới là trung tâm.** Người nghe không thể vừa đọc vừa nghe → không bắt sinh viên đọc chữ trên slide.
-2. **Hình ảnh hơn chữ:** ưu tiên hình chất lượng cao, sơ đồ, biểu đồ đơn giản, một con số lớn.
-3. **Quy tắc 6×6:** tối đa 6 gạch đầu dòng/slide, tối đa 6 từ/gạch đầu dòng. Nội dung chi tiết đưa vào **speaker notes** hoặc tài liệu phát tay.
-4. **Tiêu đề slide là một khẳng định/thông điệp** (headline), không chỉ là nhãn chủ đề.
-5. Cỡ chữ đủ lớn để hàng ghế cuối đọc được; đơn giản, dễ hiểu; nhịp nhàng với lời nói.
-6. Slide đặc biệt: slide **hook**; slide **dàn ý 3 ý chính** (lặp lại làm "bản đồ" khi chuyển phần); slide **hoạt động** (câu hỏi/nhiệm vụ + thời gian đếm ngược); slide **tóm tắt**; slide **câu kết/sound bite**; slide cảm ơn/credits nếu phù hợp.
-7. Không để slide khiến giảng viên quay lưng về lớp quá 2 giây.
+Chạy `references/evaluation-checklist.md`. Tối thiểu phải đạt:
 
-## Đầu ra: Bản thiết kế bài giảng
+- [ ] Một thông điệp cốt lõi; 3 (≤5) ý chính; mọi phần đều phục vụ outcome.
+- [ ] Hook trong 30 giây đầu, đúng đề tài; mở đầu có outcomes và dàn ý.
+- [ ] Mỗi chỗ chuyển ý có câu chuyển và _(dừng)_; kết luận đủ 4 yếu tố; slide cuối là Kết luận, không phải "Cảm ơn".
+- [ ] Ghost deck test: chỉ đọc các action title theo thứ tự cũng thấy được toàn bộ lập luận của bài.
+- [ ] Không giảng liền > 20–25 phút; có điểm chạm khoảng 10 phút một lần; sinh viên hoạt động ≥ 1/3 thời gian (buổi học) hoặc khoảng 25% (bài nói).
+- [ ] Mật độ chữ đạt chuẩn chung ở `references/integration.md` §3; slide nội dung nào cũng có speaker notes.
+- [ ] Không có số liệu hay câu chuyện bịa; marker `[VERIFY]`/`[NEEDS PROFESSOR INPUT]` được liệt kê đủ ở Flags; mọi thứ mượn đều có citation.
+- [ ] Không lỗi lập luận; có nêu giới hạn/phản biện; có ngân hàng câu hỏi và slide phụ lục.
 
-Luôn trả về theo mẫu trong `references/blueprint-template.md` gồm: (A) Thông tin & thông điệp cốt lõi; (B) Bảng phân bổ thời gian; (C) Kịch bản từng slide (tiêu đề-headline, nội dung hiển thị ≤6×6, gợi ý hình ảnh, **speaker notes** có ký hiệu trình bày, hoạt động tương tác, thời lượng); (D) Ngân hàng câu hỏi dự kiến; (E) Phương án co giãn thời gian; (F) Checklist chuẩn bị & luyện tập cho giảng viên. Skill tạo slide dùng trực tiếp mục C để dựng slide và đưa speaker notes vào phần Notes của PowerPoint.
+## Tài liệu tham chiếu
 
-## Tự kiểm tra trước khi giao
-
-Chấm bản thiết kế theo `references/evaluation-checklist.md`. Tối thiểu phải đạt:
-
-- [ ] Có 1 thông điệp cốt lõi ≤ 140 ký tự; thân bài 3 (≤5) ý chính.
-- [ ] 30 giây đầu có hook liên quan trực tiếp đề tài; mở đầu nêu mục tiêu và dàn ý.
-- [ ] Mỗi phần có câu chuyển ý; kết luận có tóm tắt + liên hệ + câu kết + kêu gọi hành động; câu kết quay về hook nếu được.
-- [ ] Tổng kịch bản ≤ 75% thời lượng; ~25% thời gian dành cho sinh viên tham gia; có Q&A.
-- [ ] Mỗi 10–15 phút có một hoạt động tương tác, có hướng dẫn rõ và thời gian.
-- [ ] Không slide nào vượt 6×6; mỗi slide nội dung có speaker notes.
-- [ ] Số liệu có nguồn, đã quy đổi về điều quen thuộc; có nêu giới hạn/phản biện.
-- [ ] Không mắc lỗi lập luận (lạc đề, vòng luẩn quẩn, lầm nguyên nhân – kết quả…).
-
-## Tài liệu tham chiếu (đọc khi cần)
-
-- `references/openings.md` – 12 cách mở đầu + mẫu áp dụng cho bài giảng.
-- `references/closings.md` – 9 cách kết luận + 4 yếu tố của phần kết.
-- `references/interactive-activities.md` – hoạt động tương tác theo mục đích, sĩ số, thời điểm.
-- `references/delivery.md` – ngôn ngữ cơ thể, giọng nói, lắng nghe chủ động, vượt qua hồi hộp, luyện tập, 3S, 7 kỹ năng phong cách Obama, 10 bí quyết, 5 yếu tố cản trở.
-- `references/logic-and-reasoning.md` – tam đoạn luận, quy nạp, song quan, phản chứng; 8 lỗi lập luận.
-- `references/blueprint-template.md` – mẫu đầu ra.
-- `references/evaluation-checklist.md` – tiêu chuẩn phân tích, đánh giá bài thuyết trình hiệu quả (dùng cho tự rà soát hoặc cho sinh viên đánh giá chéo).
+- `references/integration.md` – hợp đồng với lesson-builder, deck-studio, academic-pptx; bảng giải quyết xung đột; mẫu câu chuyển ý.
+- `references/blueprint-template.md` – mẫu Bản thiết kế bài giảng.
+- `references/openings.md` – 12 cách mở đầu, ghép với activation.
+- `references/closings.md` – 4 yếu tố và 9 cách kết luận, ghép với closure và slide Kết luận.
+- `references/interactive-activities.md` – điểm chạm của sách, đối chiếu với catalog 15 kỹ thuật của lesson-builder.
+- `references/delivery.md` – giọng nói, ngôn ngữ cơ thể, 3S, phong cách Obama, 10 bí quyết, 5 yếu tố cản trở, vượt qua hồi hộp, luyện tập, công thức T-I-S.
+- `references/logic-and-reasoning.md` – 4 phép lập luận, 8 lỗi lập luận.
+- `references/evaluation-checklist.md` – tiêu chí đánh giá (tự rà soát hoặc cho sinh viên đánh giá chéo).

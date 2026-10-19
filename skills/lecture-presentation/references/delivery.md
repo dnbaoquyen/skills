@@ -70,7 +70,7 @@ Dùng file này để viết **chỉ dẫn trình bày** trong speaker notes và
 
 ## 7. Năm yếu tố cản trở (cần tránh)
 
-1. **Sai số liệu** (và slide dày đặc chữ – vượt quy tắc 6×6).
+1. **Sai số liệu** (và slide dày đặc chữ – vượt chuẩn mật độ ≤ 4 gạch × ~8 từ, ≤ 40 từ – xem `integration.md` §3; sách đặt trần 6×6).
 2. **Quay lưng về người nghe** quá 2 giây; **kết thúc không tốt** (chỉ tóm tắt + cảm ơn, không hỏi cảm nhận, không dành thời gian hỏi đáp).
 3. **Không trình bày lợi ích** cho người nghe.
 4. **Người nghe không phù hợp** – không tìm hiểu trước đối tượng.

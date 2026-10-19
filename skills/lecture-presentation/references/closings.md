@@ -9,7 +9,9 @@ Khi đóng đinh vào tường, thứ duy nhất còn nhìn thấy là **mũ đi
 3. **Củng cố mối liên hệ** – giữa nội dung với đời sống/nghề nghiệp/kỳ thi của từng sinh viên, và giữa sinh viên với giảng viên (mối quan hệ không chấm dứt khi hết giờ).
 4. **Câu kết phù hợp, ấn tượng** + **kêu gọi hành động** (mục đích cuối cùng của thuyết trình là thuyết phục): nhiệm vụ cụ thể, cam kết, lời khích lệ ("Các bạn cảm thấy thế nào?", "Hãy thử ngay trong bài tập tuần này!").
 
-Trình tự gợi ý: Câu chuyển → Tóm tắt 3 ý → (Cảm ơn + mời đặt câu hỏi → Hỏi – Đáp 5–10 phút/1–2 giờ) → Liên hệ → Câu kết → Kêu gọi hành động → Cảm ơn và dừng.
+Trình tự gợi ý: Câu chuyển → Tóm tắt 3 ý → Check/closure (phiếu 1 phút, muddiest point) → **Slide Kết luận** (2–4 ý chính + sound bite + kêu gọi hành động + nối sang buổi sau + liên hệ/QR) → Mời đặt câu hỏi ("Các bạn còn câu hỏi hay góp ý gì không?") → Hỏi – Đáp (5–10 phút cho mỗi 1–2 giờ) trên slide Kết luận → Câu kết quay về hook → **Nói** lời cảm ơn và dừng.
+
+**Slide Kết luận là slide cuối cùng** và giữ nguyên trên màn hình suốt Q&A (quy tắc của academic-pptx). Không thêm slide "Cảm ơn" hay slide trống sau nó; lời cảm ơn được nói ra. Slide References và phụ lục Q&A đặt sau slide Kết luận và chỉ mở khi cần trả lời câu hỏi.
 
 Đừng chỉ "tóm tắt và cảm ơn": hãy **hỏi cảm nhận** của sinh viên và **dành thời gian** cho câu hỏi về điều họ chưa hiểu.
 
@@ -17,7 +19,7 @@ Trình tự gợi ý: Câu chuyển → Tóm tắt 3 ý → (Cảm ơn + mời �
 
 | #   | Cách kết                                   | Áp dụng cho bài giảng                                                                                                                                               |
 | --- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | **Trình chiếu danh sách cảm ơn** (credits) | Cảm ơn nhóm sinh viên trình bày, trợ giảng, khách mời; hiệu ứng chữ chạy như cuối phim                                                                              |
+| 1   | **Trình chiếu danh sách cảm ơn** (credits) | Cảm ơn nhóm sinh viên trình bày, trợ giảng, khách mời. Chỉ dùng cho sự kiện; đặt **trước** slide Kết luận, không bao giờ là slide cuối                              |
 | 2   | **Tranh biếm họa**                         | Một tranh liên quan, kết hợp hình ảnh – hài hước – ẩn dụ để "đóng gói" thông điệp                                                                                   |
 | 3   | **Câu hỏi khiêu khích / tu từ**            | Câu hỏi để sinh viên tiếp tục suy nghĩ sau giờ học; có thể là câu hỏi mở cho bài tập                                                                                |
 | 4   | **Sound bite**                             | Một câu ngắn thâu tóm cốt lõi (như "Stay hungry, stay foolish"); tự hỏi: có đáng được chia sẻ lại không? có đúng giọng thật của mình? có cô đọng chính xác cốt lõi? |

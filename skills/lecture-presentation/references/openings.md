@@ -10,6 +10,12 @@ Ba mục đích bắt buộc của mọi cách mở đầu:
 
 Lưu ý chung: không lạm dụng; có thể kết hợp 2 cách; hook phải **liên quan trực tiếp đề tài** ("tám" chuyện trên trời dưới đất là "xôi hỏng bỏng không"); không nói quá nhiều ở phần mở đầu – để dành sự tò mò.
 
+**Khi chạy cùng teaching-skills / academic-pptx:**
+
+- Hook nên **kiêm luôn activation** (3–5 phút) của lesson-builder: gợi lại bài trước, cho sinh viên dự đoán, hoặc nêu bài toán mà buổi học sẽ giải. Thông báo hành chính để sau hook.
+- **Không bịa chất liệu cho hook.** Số liệu và trích dẫn chưa kiểm chứng gắn `[VERIFY: …]`. Câu chuyện hay trải nghiệm cá nhân gắn `[NEEDS PROFESSOR INPUT: câu chuyện thật về …]`. Tình huống giả định phải nói rõ là giả định.
+- Slide hook theo nguyên tắc của academic-pptx: một con số lớn, một câu hỏi, hoặc một hình **mang nội dung** (không dùng ảnh stock hay icon trang trí). Có citation nếu là số liệu mượn.
+
 | #   | Cách mở đầu                                  | Khi nào dùng                                               | Mẫu áp dụng cho bài giảng                                                                                                                         | Lưu ý                                                                       |
 | --- | -------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | 1   | **Con số thống kê**                          | Chủ đề có dữ liệu ấn tượng; cần thuyết phục tầm quan trọng | Chiếu một con số lớn, hỏi: "Có ai biết con số này nói về điều gì không?" → chờ → tiết lộ → dẫn vào đề tài                                         | Số liệu mới, có nguồn; đặt con số nổi bật trên slide, không kèm chữ         |

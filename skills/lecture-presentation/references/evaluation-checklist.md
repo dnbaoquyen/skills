@@ -48,7 +48,7 @@ Dùng để: (1) tự rà soát bản thiết kế bài giảng trước khi gia
 
 **Hài hước:** có không? phù hợp người nghe? ăn nhập với bài? có khoảng dừng thích hợp trước/sau ý quan trọng?
 
-**Công cụ hình ảnh (slide):** thiết kế hiệu quả? hỗ trợ lập luận? nhịp nhàng với lời nói? làm tăng hay giảm năng lượng? đơn giản, dễ hiểu? dễ thấy (cỡ chữ đủ lớn)? tuân thủ 6×6?
+**Công cụ hình ảnh (slide):** thiết kế hiệu quả? hỗ trợ lập luận? nhịp nhàng với lời nói? làm tăng hay giảm năng lượng? đơn giản, dễ hiểu? dễ thấy (cỡ chữ đủ lớn)? đạt chuẩn mật độ (≤ 4 gạch × ~8 từ, ≤ 40 từ)? action title là câu khẳng định, ghost deck test đạt? mọi thứ mượn đều có citation?
 
 **Ngôn ngữ cơ thể:** tư thế tự tin, tự chủ? cử chỉ tự nhiên, đúng lúc, dễ thấy? tiếp xúc mắt với toàn bộ khán giả?
 
