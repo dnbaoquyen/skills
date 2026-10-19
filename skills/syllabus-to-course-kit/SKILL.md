@@ -68,7 +68,10 @@ Với mỗi buổi trong `schedule`:
 1. `lesson-builder` mode `full`: giáo án, lecture notes, slide outline, phiếu hoạt động. Nội dung lấy từ các trang giáo trình đã ánh xạ.
 2. `lecture-presentation`: bản thiết kế bài giảng. Gồm phần mở đầu kiêm khởi động, chuyển ý, điểm chạm khoảng 10 phút một lần, slide Kết luận, ngân hàng câu hỏi.
 3. Gộp thành **bài giảng chi tiết** theo `templates/detailed-lecture.md`. Đây là tài liệu giảng viên cầm lên lớp: mỗi slide có nội dung trình chiếu, lời giảng, ví dụ minh họa, câu hỏi/hoạt động, thời lượng, trang giáo trình.
-4. `academic-pptx` (đọc kèm `pptx`) dựng file `.pptx`; lời giảng đưa vào Notes; chạy QA của academic-pptx. Marker `[VERIFY]` chỉ nằm trong Notes và bài giảng chi tiết, **không** hiện ở chân slide sinh viên nhìn thấy. Render slide thành ảnh và xem lại trước khi giao.
+4. Viết nội dung buổi vào `kit/Wnn/_nguon/wnn_content.py` theo `templates/session-content-schema.md`, rồi dựng slide và bài giảng chi tiết bằng `scripts/build_session.py`. Các quy tắc nội dung và thiết kế của academic-pptx vẫn áp dụng: action title, mỗi slide một exhibit, citation, slide Kết luận là slide cuối, slide Tài liệu tham khảo. Lời giảng nằm trong Notes; marker `[VERIFY]` chỉ có trong Notes và bài giảng chi tiết, không hiện trên slide.
+   - **Kiểm tra bắt buộc:** chạy `scripts/qa_deck.py <deck> --minutes <thời lượng>` cho đến khi thoát mã 0. Sau đó render slide thành ảnh và xem lại bằng mắt. Cảnh báo không chặn (ví dụ D1 với bố cục hai cột) phải có lý do ghi trong `00_REVIEW.md`.
+   - **Lời giảng phải đủ cho thời lượng.** Giảng bằng tiếng Việt khoảng 130 âm tiết/phút. Thời lượng slide chỉ giảng được tính từ lời giảng, không ước bằng tay. Tổng kế hoạch phải đạt ít nhất 75% thời lượng buổi; nếu thiếu, bổ sung phần đề cương yêu cầu (phương pháp học, kiểm tra nhanh, ví dụ cho kiến thức cốt lõi), không nói độn.
+   - **Giao diện** (màu, phông) lấy theo yêu cầu của giảng viên, ghi trong `META["theme"]` và `00_assumptions.md`. Không có thì dùng mặc định trung tính.
 5. **Bộ luyện tập** theo `templates/skill-practice-kit.md`, cho mỗi CLO chính của buổi. Dạng bộ luyện tập **phụ thuộc vào loại nội dung**, không phụ thuộc vào môn:
    - kỹ năng hoặc quy trình (thuyết trình, đàm phán, lập kế hoạch, thực hành thí nghiệm…): checklist hành vi + hướng dẫn từng bước + bài tập từ nhận diện đến vận dụng;
    - tính toán hoặc giải bài (kế toán, thống kê, lập trình…): lời giải mẫu từng bước → bài tập bớt dần gợi ý → bài tự giải; checklist là các bước kiểm tra lời giải;
@@ -105,7 +108,8 @@ Chạy theo lô 3–4 buổi. Sau mỗi lô, cập nhật `kit/PROGRESS.md` đ�
 3. **Thu hút chú ý:** mọi buổi đều có phần mở đầu trong 30 giây đầu, điểm chạm khoảng 10 phút một lần, không giảng liền quá 20–25 phút, có slide Kết luận (không kết bằng "Cảm ơn").
 4. **Được luyện chứ không chỉ được nghe:** mỗi CLO chính của buổi có thời gian thực hành trên lớp và có bộ luyện tập phù hợp với loại nội dung (xem Phase 3 bước 5).
 5. **Không mang thói quen của môn này sang môn khác:** mọi chi tiết riêng của một môn (ví dụ, thuật ngữ, rubric, cách chia buổi) chỉ nằm trong thư mục `kit/` và passport của môn đó, không bao giờ được ghi vào file của skill.
-6. **Không giả định ngầm:** mọi mặc định đều nằm trong `kit/00_assumptions.md` và các quyết định quan trọng nằm trong `00_REVIEW.md`.
+6. **Script dùng chung không chứa nội dung của môn nào.** Chữ, chú thích, hình riêng của môn chỉ nằm trong file nội dung của buổi (`caption`, `footer`, `draw()`). Khi sửa `scripts/`, tìm trong script tên môn và thuật ngữ của môn đang làm để chắc không có gì lọt vào.
+7. **Không giả định ngầm:** mọi mặc định đều nằm trong `kit/00_assumptions.md` và các quyết định quan trọng nằm trong `00_REVIEW.md`.
 
 ## Tài liệu tham chiếu
 
@@ -116,3 +120,6 @@ Chạy theo lô 3–4 buổi. Sau mỗi lô, cập nhật `kit/PROGRESS.md` đ�
 - `references/output-structure.md` – cây thư mục đầu ra.
 - `templates/detailed-lecture.md` – bài giảng chi tiết một buổi.
 - `templates/skill-practice-kit.md` – checklist + hướng dẫn + bài tập rèn luyện một kỹ năng.
+- `templates/session-content-schema.md` – cấu trúc file nội dung một buổi (META, SLIDES, theme, hình riêng).
+- `scripts/build_session.py` – dựng .pptx (Notes = lời giảng) và bài giảng chi tiết .md từ file nội dung.
+- `scripts/qa_deck.py` – kiểm tra tự động: mật độ chữ (theo âm tiết), cỡ chữ, tương phản WCAG, alt text, marker lộ trên slide, lời giảng so với thời lượng, nhịp tương tác, slide Kết luận và Tài liệu tham khảo.
