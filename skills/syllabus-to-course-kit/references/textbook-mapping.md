@@ -28,3 +28,18 @@ Mục đích: mỗi buổi học có một **gói nguồn** để lesson-builder
 - Số liệu trong giáo trình có thể đã lỗi thời. Khi đưa lên slide, ghi năm của số liệu và gắn `[VERIFY: cập nhật số liệu mới]` nếu chúng hơn khoảng 5 năm.
 - Ví dụ trong giáo trình không phù hợp với lớp học (nhạy cảm, quá cũ, ngoài ngữ cảnh sinh viên) thì thay bằng tình huống giả định, ghi rõ là "tình huống giả định".
 - Một buổi mà giáo trình không có nội dung tương ứng (đề cương dẫn tài liệu khác không được cung cấp): ghi `[NEEDS PROFESSOR INPUT: tài liệu cho W<n>]`, vẫn dựng khung buổi học, và gắn `[VERIFY]` cho mọi nội dung chuyên môn.
+
+## Khi giảng viên chưa ghép chương với buổi
+
+Thường gặp: giáo trình nhiều tập, đánh số chương liên tục (1–21), trong khi đề cương đánh số chương theo môn (1–10). **Không được giả định "chương n của đề cương = chương n của giáo trình".**
+
+1. Đọc **đề cương trước**, lấy danh sách nội dung từng buổi.
+2. Với **mọi** file giáo trình, đọc trang tên chương và danh mục mục ở trang đầu. Nên dựng một ảnh ghép trang đầu của tất cả các file để đọc một lần.
+3. Ghép buổi với chương theo **nội dung**, ghi mức tin cậy (Cao / TB / Chưa có) vào `kit/00_chapter_map.md`. Một buổi có thể lấy từ nhiều chương; một chương có thể không thuộc buổi nào.
+4. Nội dung đề cương yêu cầu nhưng giáo trình không có mục riêng (ví dụ "rào cản" chỉ nằm rải rác trong nhiều trang): tổng hợp từ các trang liên quan và **ghi rõ trên slide là phần tổng hợp**, không gán cho giáo trình.
+
+## Tải tài liệu từ Google Drive
+
+- File scan không trả về chữ qua công cụ đọc của Drive; phải tải file PDF về rồi đọc từng trang.
+- Công cụ tải của Drive giới hạn 10 MB. File lớn hơn thì nhờ giảng viên chia sẻ thư mục "Bất kỳ ai có đường liên kết – Người xem", rồi tải trực tiếp. Nhắc giảng viên tắt chia sẻ khi xong.
+- Kiểm tra từng file sau khi tải (`pdfinfo`). File hỏng thì thử sửa bằng `pikepdf`; nếu trang vẫn trống thì ghi vào Flags và xin giảng viên tải lên lại, không đoán nội dung chương.

@@ -68,7 +68,7 @@ Với mỗi buổi trong `schedule`:
 1. `lesson-builder` mode `full`: giáo án, lecture notes, slide outline, phiếu hoạt động. Nội dung lấy từ các trang giáo trình đã ánh xạ.
 2. `lecture-presentation`: bản thiết kế bài giảng. Gồm phần mở đầu kiêm khởi động, chuyển ý, điểm chạm khoảng 10 phút một lần, slide Kết luận, ngân hàng câu hỏi.
 3. Gộp thành **bài giảng chi tiết** theo `templates/detailed-lecture.md`. Đây là tài liệu giảng viên cầm lên lớp: mỗi slide có nội dung trình chiếu, lời giảng, ví dụ minh họa, câu hỏi/hoạt động, thời lượng, trang giáo trình.
-4. `academic-pptx` (đọc kèm `pptx`) dựng file `.pptx`; lời giảng đưa vào Notes; chạy QA của academic-pptx.
+4. `academic-pptx` (đọc kèm `pptx`) dựng file `.pptx`; lời giảng đưa vào Notes; chạy QA của academic-pptx. Marker `[VERIFY]` chỉ nằm trong Notes và bài giảng chi tiết, **không** hiện ở chân slide sinh viên nhìn thấy. Render slide thành ảnh và xem lại trước khi giao.
 5. **Bộ luyện tập** theo `templates/skill-practice-kit.md`, cho mỗi CLO chính của buổi. Dạng bộ luyện tập **phụ thuộc vào loại nội dung**, không phụ thuộc vào môn:
    - kỹ năng hoặc quy trình (thuyết trình, đàm phán, lập kế hoạch, thực hành thí nghiệm…): checklist hành vi + hướng dẫn từng bước + bài tập từ nhận diện đến vận dụng;
    - tính toán hoặc giải bài (kế toán, thống kê, lập trình…): lời giải mẫu từng bước → bài tập bớt dần gợi ý → bài tự giải; checklist là các bước kiểm tra lời giải;
