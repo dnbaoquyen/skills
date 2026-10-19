@@ -12,7 +12,7 @@ kit/
 ├── W01/ … Wnn/                          # mỗi buổi một thư mục
 │   ├── W01_bai_giang_chi_tiet.md (.docx)   # tài liệu chính cầm lên lớp
 │   ├── W01_slides.pptx                     # Notes = lời giảng
-│   ├── W01_ren_luyen_<ky-nang>.md (.docx)  # mỗi kỹ năng một bộ: checklist + hướng dẫn + bài tập
+│   ├── W01_luyen_tap_<clo>.md (.docx)      # mỗi CLO chính một bộ: checklist + hướng dẫn + bài tập
 │   └── lesson-builder/                     # artifact gốc: lesson_plan, lecture_notes,
 │       └── …                               #   slides_outline, activity_*, presentation_blueprint
 └── assessments/

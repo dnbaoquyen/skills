@@ -69,7 +69,12 @@ Với mỗi buổi trong `schedule`:
 2. `lecture-presentation`: bản thiết kế bài giảng. Gồm phần mở đầu kiêm khởi động, chuyển ý, điểm chạm khoảng 10 phút một lần, slide Kết luận, ngân hàng câu hỏi.
 3. Gộp thành **bài giảng chi tiết** theo `templates/detailed-lecture.md`. Đây là tài liệu giảng viên cầm lên lớp: mỗi slide có nội dung trình chiếu, lời giảng, ví dụ minh họa, câu hỏi/hoạt động, thời lượng, trang giáo trình.
 4. `academic-pptx` (đọc kèm `pptx`) dựng file `.pptx`; lời giảng đưa vào Notes; chạy QA của academic-pptx.
-5. **Bộ rèn luyện kỹ năng** theo `templates/skill-practice-kit.md`, cho mỗi kỹ năng mà buổi học dạy: checklist, hướng dẫn từng bước, bài tập rèn luyện từ dễ đến khó, tiêu chí tự đánh giá.
+5. **Bộ luyện tập** theo `templates/skill-practice-kit.md`, cho mỗi CLO chính của buổi. Dạng bộ luyện tập **phụ thuộc vào loại nội dung**, không phụ thuộc vào môn:
+   - kỹ năng hoặc quy trình (thuyết trình, đàm phán, lập kế hoạch, thực hành thí nghiệm…): checklist hành vi + hướng dẫn từng bước + bài tập từ nhận diện đến vận dụng;
+   - tính toán hoặc giải bài (kế toán, thống kê, lập trình…): lời giải mẫu từng bước → bài tập bớt dần gợi ý → bài tự giải; checklist là các bước kiểm tra lời giải;
+   - khái niệm hoặc lý thuyết (luật, lịch sử, lý thuyết kinh tế…): câu hỏi hiểu → phân tích tình huống → lập luận; checklist là tiêu chí của một câu trả lời tốt.
+
+   Một buổi có thể có nhiều dạng; ghi rõ dạng đã chọn trong file.
 
 Chạy theo lô 3–4 buổi. Sau mỗi lô, cập nhật `kit/PROGRESS.md` để nếu phiên bị gián đoạn có thể **tiếp tục từ passport** mà không làm lại.
 
@@ -98,8 +103,9 @@ Chạy theo lô 3–4 buổi. Sau mỗi lô, cập nhật `kit/PROGRESS.md` đ�
 1. **Bám đề cương:** mỗi buổi, mỗi slide nội dung, mỗi bài tập đều gắn CLO. Không dạy chủ đề ngoài đề cương. Phần mở rộng phải ghi rõ là "Nên" và được phép cắt.
 2. **Bám giáo trình:** trích ý (không chép nguyên trang) và ghi số trang trong speaker notes và slide References. Trích nguyên văn chỉ dùng cho định nghĩa ngắn, có ngoặc kép và số trang.
 3. **Thu hút chú ý:** mọi buổi đều có phần mở đầu trong 30 giây đầu, điểm chạm khoảng 10 phút một lần, không giảng liền quá 20–25 phút, có slide Kết luận (không kết bằng "Cảm ơn").
-4. **Kỹ năng được rèn chứ không chỉ được giảng:** buổi nào dạy một kỹ năng thì phải có thời gian thực hành trên lớp và có bộ rèn luyện kỹ năng.
-5. **Không giả định ngầm:** mọi mặc định đều nằm trong `kit/00_assumptions.md` và các quyết định quan trọng nằm trong `00_REVIEW.md`.
+4. **Được luyện chứ không chỉ được nghe:** mỗi CLO chính của buổi có thời gian thực hành trên lớp và có bộ luyện tập phù hợp với loại nội dung (xem Phase 3 bước 5).
+5. **Không mang thói quen của môn này sang môn khác:** mọi chi tiết riêng của một môn (ví dụ, thuật ngữ, rubric, cách chia buổi) chỉ nằm trong thư mục `kit/` và passport của môn đó, không bao giờ được ghi vào file của skill.
+6. **Không giả định ngầm:** mọi mặc định đều nằm trong `kit/00_assumptions.md` và các quyết định quan trọng nằm trong `00_REVIEW.md`.
 
 ## Tài liệu tham chiếu
 

@@ -1,4 +1,4 @@
-# Rèn luyện kỹ năng: {{tên kỹ năng}}
+# Luyện tập: {{tên kỹ năng / dạng bài / khái niệm}} ({{dạng: kỹ năng | giải bài | khái niệm}})
 
 **Học phần:** {{mã}} {{tên}} · **Buổi:** {{n}} · **CLO:** {{…}} · **Giáo trình:** tr. {{…}}
 **Dùng cho:** sinh viên (phần 1–4) · giảng viên (phần 5)
@@ -20,10 +20,10 @@
 
 Dùng trước, trong và sau khi thực hiện. Đánh dấu ✓ / ✗ / ~ (một phần).
 
-| #   | Tiêu chí quan sát được                                                                                   | Tự đánh giá | Bạn cùng nhóm đánh giá |
-| --- | -------------------------------------------------------------------------------------------------------- | ----------- | ---------------------- |
-| 1   | {{hành vi cụ thể, đo được; ví dụ: "Mở đầu trong 30 giây bằng một câu hỏi hoặc con số liên quan đề tài"}} |             |                        |
-| …   |                                                                                                          |             |                        |
+| #   | Tiêu chí quan sát được                                                                                       | Tự đánh giá | Bạn cùng nhóm đánh giá |
+| --- | ------------------------------------------------------------------------------------------------------------ | ----------- | ---------------------- |
+| 1   | {{hành vi cụ thể, đo được; ví dụ: "Nêu đủ 3 bước trước khi kết luận" hoặc "Kiểm tra đơn vị ở kết quả cuối"}} |             |                        |
+| …   |                                                                                                              |             |                        |
 
 ## 4. Bài tập rèn luyện (không tính điểm, từ dễ đến khó)
 
