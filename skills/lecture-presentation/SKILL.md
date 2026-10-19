@@ -33,7 +33,7 @@ Hợp đồng chi tiết giữa các skill (đầu vào, đầu ra, cách giải
 
 ### Bước 1 – Xác định tình huống và mục tiêu
 
-Nếu có `course_passport.yaml` hoặc lesson plan thì lấy từ đó: chủ đề, outcomes, `class_size`, `modality`, độ dài buổi học, `learner_profile.known_difficulties`. Không hỏi lại những gì đã có. Nếu không có thì hỏi gộp trong một lần: môn và chủ đề; đối tượng (năm học, ngành, kiến thức nền); sĩ số; thời lượng; hình thức và thiết bị; mục tiêu.
+Nếu có `course_passport.yaml` hoặc lesson plan thì lấy từ đó: chủ đề, outcomes, `class_size`, `modality`, độ dài buổi học, `learner_profile.known_difficulties`. Không hỏi lại những gì đã có. Khi được gọi từ `syllabus-to-course-kit` (chế độ một lượt), **không hỏi gì cả**: dùng `kit/00_assumptions.md` và gói nguồn của buổi trong `kit/00_source_map.md`. Nếu không có thì hỏi gộp trong một lần: môn và chủ đề; đối tượng (năm học, ngành, kiến thức nền); sĩ số; thời lượng; hình thức và thiết bị; mục tiêu.
 
 Trả lời 4 câu hỏi của sách: **Giảng cái gì? Giảng như thế nào** (cung cấp thông tin / thuyết phục / truyền cảm hứng)? **Sinh viên sẽ cảm nhận thế nào? Sinh viên sẽ thay đổi thế nào?**
 
