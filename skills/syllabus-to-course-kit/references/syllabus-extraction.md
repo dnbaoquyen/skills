@@ -2,18 +2,18 @@
 
 Đề cương chi tiết ở các trường Việt Nam thường gồm những mục dưới đây (tên mục có thể khác nhau). Tìm theo **nội dung**, không theo số mục.
 
-| Mục trong đề cương                                                                                             | Trích gì                                                          | Trường passport / file                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Thông tin chung (tên, mã, số tín chỉ, loại học phần, học phần tiên quyết/học trước, đối tượng, khoa phụ trách) | mã, tên, số TC, tiên quyết, ngành/năm                             | `course.code`, `title`, `credits`, `prerequisites`, `level`, `discipline`                                                             |
-| Phân bổ thời gian (số tiết LT / TH / thảo luận / tự học)                                                       | tổng tiết, tiết mỗi buổi                                          | `course.contact_hours_per_week`, `course.weeks`, độ dài buổi                                                                          |
-| Mô tả tóm tắt học phần                                                                                         | phạm vi, vai trò                                                  | `learner_profile.motivation_context` (bắt buộc hay tự chọn, vì sao ngành cần)                                                         |
-| Mục tiêu học phần (CO)                                                                                         | mục tiêu tổng quát                                                | Ghi vào `kit/00_source_map.md`; dùng để viết phần ý nghĩa của từng buổi                                                               |
-| Chuẩn đầu ra học phần (CLO), ma trận CLO–PLO                                                                   | từng CLO nguyên văn                                               | `learning_outcomes[]`: `id` = mã CLO trong đề cương, `statement` nguyên văn, `bloom_level` theo bảng dưới                             |
-| Nội dung chi tiết theo chương/buổi/tuần (kèm CLO, tài liệu, hoạt động dạy – học)                               | chủ đề buổi, mục giáo trình, CLO, hoạt động đề cương yêu cầu      | `schedule[]`: `id` W1…, `topic`, `outcomes`; hoạt động bắt buộc ghi vào `kit/00_source_map.md`                                        |
-| Phương pháp giảng dạy                                                                                          | thuyết giảng, thảo luận, tình huống, đóng vai, thuyết trình nhóm… | Ràng buộc khi chọn hoạt động; hình thức online/kết hợp → `course.modality`                                                            |
-| Đánh giá học phần (thành phần, trọng số, hình thức, thời điểm, tiêu chí, CLO đánh giá, rubric)                 | **mọi chi tiết, nguyên văn**                                      | `assessment_plan[]`: `id` A1…, `type`, `title`, `weight`, `outcomes_assessed`, `week`; rubric nguyên văn lưu ở `kit/00_source_map.md` |
-| Tài liệu học tập (chính, tham khảo)                                                                            | giáo trình chính, tài liệu khác                                   | `kit/00_source_map.md`; giáo trình chính là nguồn nội dung                                                                            |
-| Quy định học phần (chuyên cần, nộp muộn, liêm chính, AI)                                                       | nguyên văn                                                        | `policies.*`; không có thì để `""` và ghi `[NEEDS PROFESSOR INPUT]`                                                                   |
+| Mục trong đề cương                                                                                             | Trích gì                                                          | Trường passport / file                                                                                                                             |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Thông tin chung (tên, mã, số tín chỉ, loại học phần, học phần tiên quyết/học trước, đối tượng, khoa phụ trách) | mã, tên, số TC, tiên quyết, ngành/năm                             | `course.code`, `title`, `credits`, `prerequisites`, `level`, `discipline`                                                                          |
+| Phân bổ thời gian (số tiết LT / TH / thảo luận / tự học)                                                       | tổng tiết, tiết mỗi buổi                                          | `course.contact_hours_per_week`, `course.weeks`, độ dài buổi                                                                                       |
+| Mô tả tóm tắt học phần                                                                                         | phạm vi, vai trò                                                  | `learner_profile.motivation_context` (bắt buộc hay tự chọn, vì sao ngành cần)                                                                      |
+| Mục tiêu học phần (CO)                                                                                         | mục tiêu tổng quát                                                | Ghi vào `kit/00_source_map.md`; dùng để viết phần ý nghĩa của từng buổi                                                                            |
+| Chuẩn đầu ra học phần (CLO), ma trận CLO–PLO                                                                   | từng CLO nguyên văn                                               | `learning_outcomes[]`: `id` = `LO<n>` (xem mục "Mã định danh"), `syllabus_code` = mã CLO gốc, `statement` nguyên văn, `bloom_level` theo bảng dưới |
+| Nội dung chi tiết theo chương/buổi/tuần (kèm CLO, tài liệu, hoạt động dạy – học)                               | chủ đề buổi, mục giáo trình, CLO, hoạt động đề cương yêu cầu      | `schedule[]`: `id` W1…, `topic`, `outcomes`; hoạt động bắt buộc ghi vào `kit/00_source_map.md`                                                     |
+| Phương pháp giảng dạy                                                                                          | thuyết giảng, thảo luận, tình huống, đóng vai, thuyết trình nhóm… | Ràng buộc khi chọn hoạt động; hình thức online/kết hợp → `course.modality`                                                                         |
+| Đánh giá học phần (thành phần, trọng số, hình thức, thời điểm, tiêu chí, CLO đánh giá, rubric)                 | **mọi chi tiết, nguyên văn**                                      | `assessment_plan[]`: `id` A1…, `type`, `title`, `weight`, `outcomes_assessed`, `week`; rubric nguyên văn lưu ở `kit/00_source_map.md`              |
+| Tài liệu học tập (chính, tham khảo)                                                                            | giáo trình chính, tài liệu khác                                   | `kit/00_source_map.md`; giáo trình chính là nguồn nội dung                                                                                         |
+| Quy định học phần (chuyên cần, nộp muộn, liêm chính, AI)                                                       | nguyên văn                                                        | `policies.*`; không có thì để `""` và ghi `[NEEDS PROFESSOR INPUT]`                                                                                |
 
 ## Quy đổi thời gian (mặc định, đề cương ghi khác thì theo đề cương)
 
@@ -50,6 +50,25 @@ Nếu một CLO có nhiều động từ thì lấy mức **cao nhất** mà bà
 | Hồ sơ học tập                                        | portfolio     |
 
 Nếu đề cương ghi "giữa kỳ: thuyết trình nhóm" thì `type: presentation`, không phải `exam`. Hình thức theo đề cương luôn được ưu tiên.
+
+## Mã định danh: đề cương → schema passport
+
+Schema của teaching-skills chỉ chấp nhận `LO<số>`, `A<số>`, `W<số>`; đề cương Việt Nam thường dùng `CLO.1`, `A1.1`, "Buổi 1". Quy tắc:
+
+- CLO.n → `id: LOn`; giữ mã gốc trong trường phụ `syllabus_code: "CLO.n"` (schema cho phép trường phụ).
+- Bài đánh giá đánh số theo thứ tự xuất hiện trong bảng đánh giá: A1.1 → `A1`, A1.2 → `A2`, A2 → `A3`… và giữ `syllabus_code`.
+- Buổi/tuần n → `Wn`.
+- **Mọi tài liệu cho giảng viên và sinh viên dùng mã gốc của đề cương** (CLO.1, A1.2); mã schema chỉ dùng trong passport. Bảng đối chiếu đặt ở đầu `kit/00_source_map.md`.
+- Sau khi ghi passport, chạy `scripts/check_passport.py` của teaching-skills; phải đạt `VALID` trước khi sang Phase 3.
+
+## Khối lượng học tập
+
+Đề cương có bảng giờ (trực tiếp / đồng bộ / không đồng bộ / tự học) thì điền `workload_audit` trực tiếp từ đó: tổng giờ ÷ số tuần, so với số tín chỉ × 50 giờ, ghi nguồn trong `constants_used`. Không dùng hằng số mặc định của teaching-skills (quy ước Mỹ) khi đề cương đã có số liệu.
+
+## Cảnh báo của Gate 1.5 thường gặp với đề cương Việt Nam
+
+- **C2** (một bài > 40%): thi cuối kỳ 50–60% là quy định thể chế, chỉ ghi Flags, không đề xuất sửa.
+- **C3** (bài lớn đầu tiên không có bài nhỏ đi trước): báo động giả khi bài quá trình là chuỗi bài hằng tuần nhưng được ghi `week: "W1–W9"`. Ghi rõ là báo động giả trong `00_REVIEW.md`.
 
 ## Kiểm tra sau khi trích
 
