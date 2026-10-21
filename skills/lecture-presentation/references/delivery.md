@@ -57,7 +57,7 @@ Dùng file này để viết **chỉ dẫn trình bày** trong speaker notes và
 
 ## 6. Mười bí quyết thuyết trình
 
-1. Xác định nội dung chính/mục đích; phân biệt "cái cần biết" và "nếu biết cũng tốt" (sau 20 phút quên 40%, nửa ngày 60%, một tuần 90%).
+1. Xác định nội dung chính/mục đích; phân biệt "cái cần biết" và "nếu biết cũng tốt" (trí nhớ giảm nhanh nhất trong vài giờ đầu — Ebbinghaus: ~40% sau 20 phút, ~2/3 sau một ngày; sách nguồn ghi "một tuần 90%", không khớp nghiên cứu gốc).
 2. Tập trung thông tin **"vì người nghe"**.
 3. Tạo sự tin tưởng – nhưng **không tự quảng cáo bản thân quá nhiều**.
 4. Dẫn dắt ngắn gọn (số liệu, tình huống, thông điệp gây tò mò), giải thích điều chưa rõ.

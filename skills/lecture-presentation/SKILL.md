@@ -49,7 +49,7 @@ Viết **thông điệp cốt lõi**: một câu ≤ 140 ký tự, kiểu headli
 ### Bước 3 – Chọn lọc: "Bắt buộc → Cần → Nên"
 
 - Gắn nhãn Bắt buộc / Cần / Nên cho các ý của từng segment. Đây là nền cho phương án co giãn thời gian: hết giờ thì cắt từ "Nên" lên. **Không bao giờ cắt kết luận/closure.**
-- Thân bài có **3 ý chính** (tối đa 5), theo quy tắc Con số 3. Lý do: người nghe quên khoảng 40% sau 20 phút và khoảng 90% sau một tuần, nên cần ít ý và nhắc lại.
+- Thân bài có **3 ý chính** (tối đa 5), theo quy tắc Con số 3. Lý do: trí nhớ suy giảm nhanh nhất trong vài giờ đầu (đường cong quên Ebbinghaus: khoảng 40% sau 20 phút, khoảng 2/3 sau một ngày, đo trên tài liệu vô nghĩa), nên cần ít ý và nhắc lại. Sách nguồn ghi "90% sau một tuần (Yale)" — con số này không khớp với nghiên cứu gốc, không dùng.
 - Số liệu phải mới, có nguồn và được quy đổi về điều quen thuộc (ví dụ: va chạm ở 70 km/h tương đương rơi từ tầng 6). Nêu cả giới hạn và phản biện; bỏ qua rủi ro là một trong "5 yếu tố cản trở".
 
 ### Bước 4 – Dựng "Cái đinh" trên arc có sẵn
