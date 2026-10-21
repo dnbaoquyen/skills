@@ -248,7 +248,7 @@ def build_md():
           "## Marker cần giảng viên xử lý", ""]
     marks = []
     for i, s in enumerate(SLIDES, 1):
-        blob = s["title"] + " ".join(s["body"]) + s["notes"] + s.get("src", "") + str(s.get("interact", ""))
+        blob = " ".join(str(s.get(k, "")) for k in ("title", "body", "notes", "src", "interact", "caption", "footer", "example", "alt"))
         for m in re.findall(r"\[(?:VERIFY|NEEDS PROFESSOR INPUT)[^\]]*\]", blob): marks.append(f"- Slide {i}: {m}")
     L += list(dict.fromkeys(marks))
     open(f"{OUT}/{PREFIX}_bai_giang_chi_tiet.md", "w", encoding="utf-8").write("\n".join(L) + "\n")
